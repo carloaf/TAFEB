@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textviewid"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/my_light_primary"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="Hello the is a sample text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

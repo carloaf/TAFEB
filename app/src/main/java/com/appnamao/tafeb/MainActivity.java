@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         spSexo.setAdapter(adapterSexo);
 
         ArrayList<String> leList = new ArrayList<>();
-        leList.add("Selecione a linha de ensino");
+        leList.add("Selecione linha ensino");
         leList.add("LEMB");
         leList.add("LEMS");
         ArrayAdapter<String> adapterLe = new ArrayAdapter<>(MainActivity.this, R.layout.spinner_list, leList);

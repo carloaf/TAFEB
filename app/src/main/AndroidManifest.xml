@@ -6,15 +6,15 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:src="@drawable/tafeb"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/tafebicon"
+        android:icon="@drawable/tafebicon"
+        android:src="@drawable/tafeb"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.TAFEB"
         tools:targetApi="31">
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:theme="@style/Base.Theme.TAFEB"
             android:exported="true">
             <intent-filter>

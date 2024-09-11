@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import com.appnamao.tafeb.Database.DatabaseHelper;
 //import com.appnamao.tafeb.Model.StractEmployee;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private DatabaseHelper databaseHelper;
@@ -30,13 +32,25 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Window window = getWindow();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        getSupportActionBar().hide();
+
+        setContentView(R.layout.activity_main);
 
         databaseHelper = new DatabaseHelper(this);
         SQLiteDatabase SqLiteDatabase = databaseHelper.getReadableDatabase();
+
+        Button btnAbout = findViewById(R.id.bt_about);
+        btnAbout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ActivityAbout.class);
+                startActivity(i);
+            }
+        });
 
         Spinner spIdade = findViewById(R.id.sp_idade);
         Spinner spMensao = findViewById(R.id.sp_mensao);

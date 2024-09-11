@@ -11,9 +11,9 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/tafeb"
+        android:layout_width="217dp"
+        android:layout_height="230dp"
+        android:src="@drawable/iconpreview"
 
         />
 

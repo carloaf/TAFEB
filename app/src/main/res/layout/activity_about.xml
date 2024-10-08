@@ -27,7 +27,7 @@
         android:justificationMode="inter_word"
         android:paddingRight="35dp"
         android:paddingLeft="35dp"
-        android:text="O aplicativo para Android foi desenvolvido para facilitar a consulta dos índices estabelecidos pela Portaria Nº 850-EME, de 31 de agosto de 2022, que regulamenta os padrões de desempenho físico no Teste de Aptidão Física (TAF) do Exército Brasileiro. Com base em tabelas detalhadas, ele permite uma pesquisa personalizada de acordo com a idade, gênero, índice a ser pesquisado para as diversas modalidades (corrida, flexões na barra, abdominais e flexão de braços) e a Linha de Ensino Militar Bélico (LEMB), Linha de Ensino Militar de Saúde (LEMS), Linha de Ensino Militar Complementar (LEMC) e Linha de Ensino Militar Científico-Tecnológico (LEMCT)."
+        android:text="O aplicativo foi desenvolvido para auxiliar na consulta e pesquisa de índices de desempenho físico com base em tabelas detalhadas. Ele permite uma pesquisa personalizada de acordo com a idade, gênero e tipo de exercício, abrangendo modalidades como corrida, flexões na barra, abdominais e flexão de braços. A ferramenta é ideal para quem deseja monitorar e planejar seus treinamentos físicos, fornecendo informações úteis para otimizar seu desempenho, o acesso offline, garante a disponibilidade das informações a qualquer momento. "
         android:textColor="@color/black"
         android:textSize="18sp" />
 
